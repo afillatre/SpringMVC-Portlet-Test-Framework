@@ -44,4 +44,4 @@ If you have a different configuration, then use the annotations like the followi
 )
 ```
 ## Project example
-You can look at the sources of the following project in order to see the test API in use : 
+You can look at the sources of the following project in order to see the test API in use : https://github.com/afillatre/Liferay-SpringMVC-Powermock

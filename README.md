@@ -6,6 +6,7 @@ This project provides some classes that will make it possible to test Spring MVC
 
 ## Very quick start
 In order to use this test framework
+
 1. add the _springmvc-portlet-test-XX.jar_ in your project classpath
 2. create a simple JUnit Test
 3. inherit from _fr.ippon.springmvc.test.unit.web.junit.AbstractRunnerFreeControllerTest_ or _fr.ippon.springmvc.test.unit.web.junit.AbstractSpringRunnerControllerTest_

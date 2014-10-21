@@ -12,7 +12,7 @@ In order to use this test framework
 3. inherit from _fr.ippon.springmvc.test.unit.web.junit.AbstractRunnerFreeControllerTest_ or _fr.ippon.springmvc.test.unit.web.junit.AbstractSpringRunnerControllerTest_
 4. add the following annotations above your test class (see § Default configuration) :
 ```
-@MockWebApplication(name="portlet-with-tests")
+@MockWebApplication(name="<your_portlet_name>")
 @ContextConfiguration(loader = MockWebApplicationContextLoader.class)
 ```
 5. run your tests
@@ -27,11 +27,11 @@ The `@ContextConfiguration` annotation normally takes an array of _locations_, t
         |-webapp
             |-WEB-INF
                 |-applicationContext.xml
-                |-<portlet_name_with_spaces>-portlet.xml
+                |-<portlet_name_without_dashes>-portlet.xml
                 |-web.xml
 ```
 
-The _<portlet_name_with_spaces>_ name comes from the value of the `@MockWebApplication` annotation
+The _<portlet_name_without_dashes>_ name comes from the value of the `@MockWebApplication` annotation, minus the dashes (my-portlet --> myportlet)
 
 If you have a different configuration, then use the annotations like the following :
 ```
